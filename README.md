@@ -1,4 +1,4 @@
-# This repo contain Terraform code creates a Vault server and add a DNS record in AWS.
+# This repo contain Terraform code creates a Vault server with Consul backend without tls.
 ## Prerequisites
 
 - Active domain name - You can take one from a provider of your choice
@@ -8,8 +8,8 @@
 ### How to use it
 - Clone the repo
 ```
-git clone https://github.com/chavo1/cloudflare-nginx-terraform.git
-cd cloudflare-nginx-terraform
+git clone https://github.com/chavo1/cloudflare-nginx-terraform-notls.git
+cd cloudflare-nginx-terraform-notls
 terraform init
 terraform apply
-```# vault-cloudflare-terraform-notls
+```
