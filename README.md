@@ -1,4 +1,4 @@
-# This repo contain Terraform code that creates a Vault server with Consul backend without tls.
+# This repo contain Terraform code that creates a Vault server with Consul backend on AWS without tls.
 ## Prerequisites
 
 - Active domain name - You can take one from a provider of your choice
