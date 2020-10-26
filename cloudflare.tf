@@ -1,3 +1,12 @@
+# Required provider
+terraform {
+  required_providers {
+    cloudflare = {
+      source  = "cloudflare/cloudflare"
+      version = "~> 2.0"
+    }
+  }
+}
 # Configure the Cloudflare provider
 provider "cloudflare" {
   email   = var.email
@@ -11,7 +20,7 @@ resource "cloudflare_record" "vault" {
   type    = "A"
   proxied = false
 }
-
+# Create a record
 resource "cloudflare_record" "consul" {
   zone_id = var.zone_id
   name    = var.consul_name
